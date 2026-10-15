@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jelajah Lokal — Pengalaman Wisata Lokal Indonesia</title>
+  <meta name="description" content="Temukan tur, kuliner, workshop, dan pengalaman budaya autentik bersama mitra lokal di Indonesia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">🧭</span>
+        Jelajah Lokal
+      </a>
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <a href="#" class="active">Beranda</a>
+        <a href="#jelajahi">Jelajahi</a>
+        <a href="#kategori">Kategori</a>
+        <a href="#cara-kerja">Cara Kerja</a>
+        <a href="#mitra">Menjadi Mitra</a>
+      </nav>
+      <div class="header-actions">
+        <a href="#" class="btn btn-ghost">Masuk</a>
+        <a href="#" class="btn btn-primary">Daftar</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero">
+    <img class="hero-img" src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=1600&q=75" alt="Pura di Bali saat matahari terbenam" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <p class="eyebrow">Marketplace Pengalaman Lokal</p>
+      <h1>Rasakan Indonesia seperti warga lokal</h1>
+      <p class="hero-sub">Temukan tur, kuliner, workshop, dan pengalaman budaya autentik yang dipandu langsung oleh mitra lokal di seluruh Indonesia.</p>
+
+      <form class="search-form" onsubmit="return false;">
+        <label>
+          Destinasi
+          <select>
+            <option>Semua destinasi</option>
+            <option>Yogyakarta</option>
+            <option>Bali</option>
+            <option>Surabaya</option>
+            <option>Bandung</option>
+            <option>Malang</option>
+            <option>Ubud</option>
+            <option>Semarang</option>
+          </select>
+        </label>
+        <label>
+          Kategori
+          <select>
+            <option>Semua kategori</option>
+            <option>Tur Lokal</option>
+            <option>Workshop</option>
+            <option>Kuliner</option>
+            <option>Budaya</option>
+          </select>
+        </label>
+        <label>
+          Tanggal
+          <input type="date" />
+        </label>
+        <label>
+          Peserta
+          <input type="number" min="1" max="20" value="2" />
+        </label>
+        <button type="submit" class="btn btn-secondary">🔍 Cari Pengalaman</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Kategori ===== -->
+  <section id="kategori" class="section">
+    <div class="container">
+      <p class="eyebrow">Kategori</p>
+      <h2>Empat cara merasakan Indonesia</h2>
+      <div class="grid grid-4">
+        <a href="#" class="category-card">
+          <img src="https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=75" alt="Tur Lokal" />
+          <div class="category-info">
+            <h3>Tur Lokal</h3>
+            <p>Jelajahi kampung, kota tua, dan alam bersama pemandu setempat.</p>
+          </div>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=800&q=75" alt="Workshop" />
+          <div class="category-info">
+            <h3>Workshop</h3>
+            <p>Belajar membatik, meracik jamu, hingga membuat gerabah.</p>
+          </div>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=75" alt="Kuliner" />
+          <div class="category-info">
+            <h3>Kuliner</h3>
+            <p>Cicipi dan masak hidangan khas langsung dari dapur lokal.</p>
+          </div>
+        </a>
+        <a href="#" class="category-card">
+          <img src="https://images.unsplash.com/photo-1518548419970-58e3b4079ab2?auto=format&fit=crop&w=800&q=75" alt="Budaya" />
+          <div class="category-info">
+            <h3>Budaya</h3>
+            <p>Tari, upacara, dan kehidupan tradisional yang masih lestari.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Pengalaman Unggulan ===== -->
+  <section id="jelajahi" class="section section-cream">
+    <div class="container">
+      <p class="eyebrow">Pengalaman Unggulan</p>
+      <h2>Paling disukai minggu ini</h2>
+      <div class="grid grid-3">
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1559628233-100c798642d4?auto=format&fit=crop&w=800&q=75" alt="Workshop Membatik Tulis di Yogyakarta" />
+            <span class="badge">Workshop</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Yogyakarta, DI Yogyakarta</p>
+            <h3>Workshop Membatik Tulis di Yogyakarta</h3>
+            <p class="exp-meta">⏱ 3 jam &nbsp; ⭐ 4.7 (3 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Ibu Sri Wahyuni</strong> ✔</p>
+            <p class="exp-price">Rp225.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=75" alt="Kelas Memasak Khas Bali di Ubud" />
+            <span class="badge">Kuliner</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Ubud, Bali</p>
+            <h3>Kelas Memasak Khas Bali di Ubud</h3>
+            <p class="exp-meta">⏱ 5 jam &nbsp; ⭐ 5.0 (2 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Keluarga Wayan Sudarma</strong> ✔</p>
+            <p class="exp-price">Rp450.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1584810359583-96fc3448beaa?auto=format&fit=crop&w=800&q=75" alt="Sunrise Borobudur dan Desa Wisata Candirejo" />
+            <span class="badge">Budaya</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Yogyakarta, DI Yogyakarta</p>
+            <h3>Sunrise Borobudur &amp; Desa Wisata Candirejo</h3>
+            <p class="exp-meta">⏱ 6 jam &nbsp; ⭐ 5.0 (1 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Mas Bayu Magelang</strong> ✔</p>
+            <p class="exp-price">Rp395.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&q=75" alt="Jelajah Kuliner Tradisional Surabaya" />
+            <span class="badge">Kuliner</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Surabaya, Jawa Timur</p>
+            <h3>Jelajah Kuliner Tradisional Surabaya</h3>
+            <p class="exp-meta">⏱ 4 jam &nbsp; ⭐ 5.0 (1 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Dapur Arek Suroboyo</strong> ✔</p>
+            <p class="exp-price">Rp275.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&q=75" alt="Workshop Kopi Lokal Pangalengan" />
+            <span class="badge">Workshop</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Bandung, Jawa Barat</p>
+            <h3>Workshop Kopi Lokal Pangalengan</h3>
+            <p class="exp-meta">⏱ 2,5 jam &nbsp; ⭐ 4.0 (1 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Kang Asep Malabar</strong></p>
+            <p class="exp-price">Rp200.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+        <a href="#" class="exp-card">
+          <div class="exp-img">
+            <img src="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&w=800&q=75" alt="Trekking Sawah dan Subak Tegallalang" />
+            <span class="badge">Tur Lokal</span>
+          </div>
+          <div class="exp-body">
+            <p class="exp-loc">📍 Ubud, Bali</p>
+            <h3>Trekking Sawah &amp; Subak Tegallalang</h3>
+            <p class="exp-meta">⏱ 3 jam &nbsp; ⭐ 4.0 (1 ulasan contoh)</p>
+            <p class="exp-host">oleh <strong>Made Artawan</strong> ✔</p>
+            <p class="exp-price">Rp180.000 <span>/ orang</span></p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Destinasi ===== -->
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Destinasi</p>
+      <h2>Ke mana selanjutnya?</h2>
+      <div class="grid grid-4">
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=600&q=75" alt="Yogyakarta" />
+          <div class="dest-info"><h3>Yogyakarta</h3><p>DI Yogyakarta</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=75" alt="Bali" />
+          <div class="dest-info"><h3>Bali</h3><p>Bali</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1536152470836-b943b246224c?auto=format&fit=crop&w=600&q=75" alt="Bandung" />
+          <div class="dest-info"><h3>Bandung</h3><p>Jawa Barat</p></div>
+        </a>
+        <a href="#" class="dest-card">
+          <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=600&q=75" alt="Malang" />
+          <div class="dest-info"><h3>Malang</h3><p>Jawa Timur</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Cara Kerja ===== -->
+  <section id="cara-kerja" class="section section-cream">
+    <div class="container">
+      <p class="eyebrow">Cara Kerja</p>
+      <h2>Tiga langkah menuju pengalaman autentik</h2>
+      <div class="grid grid-3 steps">
+        <div class="step">
+          <span class="step-num">1</span>
+          <h3>Cari &amp; Pilih</h3>
+          <p>Telusuri pengalaman berdasarkan destinasi, kategori, dan tanggal yang kamu mau.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">2</span>
+          <h3>Pesan dengan Aman</h3>
+          <p>Pilih jadwal, tentukan jumlah peserta, dan bayar dengan metode favoritmu.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">3</span>
+          <h3>Nikmati Bersama Mitra Lokal</h3>
+          <p>Datang ke titik kumpul dan rasakan pengalaman yang dipandu warga setempat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA Mitra ===== -->
+  <section id="mitra" class="section cta">
+    <div class="container cta-inner">
+      <h2>Punya keahlian atau cerita lokal?</h2>
+      <p>Buka pintu rumah, dapur, atau sanggarmu untuk wisatawan dari seluruh dunia. Daftar sebagai mitra dan mulai dapatkan penghasilan dari passion-mu.</p>
+      <a href="#" class="btn btn-secondary btn-lg">Mulai Menjadi Mitra</a>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#" class="logo logo-light"><span class="logo-icon">🧭</span> Jelajah Lokal</a>
+        <p>Marketplace pengalaman wisata lokal Indonesia. Semua ulasan dan mitra di halaman ini adalah data contoh.</p>
+      </div>
+      <div>
+        <h4>Jelajahi</h4>
+        <a href="#">Semua Pengalaman</a>
+        <a href="#">Kategori</a>
+        <a href="#">Destinasi</a>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <a href="#">Tentang Kami</a>
+        <a href="#">Menjadi Mitra</a>
+        <a href="#">Kontak</a>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <a href="#">FAQ</a>
+        <a href="#">Syarat &amp; Ketentuan</a>
+        <a href="#">Kebijakan Privasi</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Jelajah Lokal. Dibuat dengan ❤️ di Indonesia.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
