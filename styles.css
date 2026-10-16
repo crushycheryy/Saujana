@@ -9,9 +9,9 @@
   --card: #ffffff;
   --primary: #245747;
   --primary-foreground: #faf8f3;
-  --secondary: #d87955;
+  --secondary: #f0bd4f;
   --secondary-foreground: #ffffff;
-  --sand: #e6bc72;
+  --sand: #e7b45b;
   --cream: #f2ecdf;
   --muted: #f0ede4;
   --muted-foreground: #6b7672;
@@ -393,4 +393,23 @@ h1, h2, h3 { letter-spacing: -0.02em; line-height: 1.15; }
   text-align: center;
   font-size: 0.8rem;
   opacity: 0.7;
+}
+.logo-img {
+  height: 2.5rem;
+  width: auto;
+  display: block;
+  border-radius: 999px;
+  mix-blend-mode: multiply;
+}
+.logo-light {
+  display: inline-flex;
+  background: var(--background);
+  padding: 0.5rem 0.2rem;
+  border-radius: 999px;
+}
+.footer-grid .logo-light {
+  display: inline-flex;
+  width: fit-content;
+  opacity: 1;
+  padding: 0.35rem 0.7rem;
 }
